@@ -5,12 +5,12 @@
 4. to run the project // npm run dev
 5. Server ready at http://localhost:4000/
 
-<!-- Submitted By:
+Submitted By:
 Name: Neetesh Kumar
 emailId: kumarneetesh96@gmail.com
-phone number: 918476828634 -->
+phone number: 918476828634
 API endpoints
-<!-- // i used postman for testing APIs -->
+I used postman for testing APIs 
 url: http://localhost:4000
  Query :- 
 1. getBooks: Retrieve all books (public)
