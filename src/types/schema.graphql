@@ -5,10 +5,20 @@ type Query {
   user(id: Int!): User
   book(id: Int!): Book
   review(id: Int!): Review
-  getBooks: [Book!]!
+  getBooks(page: Int, limit: Int, search: String):BookConnection!
   getBook(id: Int!): Book
-  getReviews(bookId: Int!): [Review!]!
+  getReviews(bookId: Int!, page: Int!, limit: Int!): ReviewConnection!
   getMyReviews: [Review!]!
+}
+
+type BookConnection {
+  books: [Book!]!
+  count: Int!
+}
+
+type ReviewConnection {
+  reviews: [Review!]!
+  count: Int!
 }
 
 type Mutation {

@@ -9,7 +9,7 @@ dotenv.config();
 
 const prisma = new PrismaClient();
 const typeDefs = importSchema('src/types/schema.graphql');
-
+// apolo server 
 const server = new ApolloServer({
   typeDefs,
   resolvers,
